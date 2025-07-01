@@ -11,15 +11,17 @@ export function Task({ id, title }) {
   };
 
   return (
-    <div
-      ref={setNodeRef}
-      {...attributes}
-      {...listeners}
-      style={style}
-      className="flex gap-4 bg-blue-400 p-2"
-    >
-      <input type="checkbox" className="" />
-      {title}
-    </div>
+    <>
+      <div
+        ref={setNodeRef}
+        {...attributes}
+        {...listeners}
+        style={style}
+        className="flex gap-2 bg-gray-300 rounded-xl p-2"
+      >
+        <input type="checkbox" />
+        {title}
+      </div>
+    </>
   );
 }
