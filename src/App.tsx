@@ -55,7 +55,7 @@ export default function App() {
   );
   return (
     <>
-      <p className="text-2xl text-center p-10">Trello clone</p>
+      <p className="text-2xl text-center p-10">{/** Title bar */}</p>
       <div className="flex p-12 gap-3">
         <DndContext
           sensors={sensors}
